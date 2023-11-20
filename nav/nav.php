@@ -29,9 +29,7 @@ require('./controlador/session_start.php');
 						Servicios
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">Preguntas Frecuentes</a>
-						<a class="dropdown-item" href="#">Compras</a>
-						<a class="dropdown-item" href="servicios.html">Otros</a>
+						<a class="dropdown-item" href="./users/form_categories.php">Categorias</a>
 					</div>
 				</li>
 				<a class="nav-item nav-link text-justify ml-3 hover-primary" href="controlador/logout.php">Salir</a>
