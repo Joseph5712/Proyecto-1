@@ -29,13 +29,15 @@ require('./controlador/session_start.php');
 						Servicios
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="./users/form_categories.php">Categorias</a>
+						<a class="dropdown-item" href="./users/form_categories.php">Agregar Categoria</a>
 					</div>
 				</li>
 				<a class="nav-item nav-link text-justify ml-3 hover-primary" href="controlador/logout.php">Salir</a>
 			</div>
 		</div>
 	</nav>
+	<?php 
+	include('users\show_categories.php');?>
     <?php }else if($_SESSION['role_id'] === '2'){ ?>
         <nav class="navbar navbar-dark bg-dark  navbar-expand-md navbar-light bg-light fixed-top">
 		<div class="text-white bg-success p-2">

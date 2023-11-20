@@ -13,7 +13,7 @@ include('controlador/session_start.php');
 <body>
 	<?php
 	include('nav\nav.php');
-
+	
 	?>
 </body>
 </html>

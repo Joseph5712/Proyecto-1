@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost:3306', 'root', '', 'php_proyecto1');
+include('./modelo/conexion.php');
 if($_POST){
     $first_name=$_POST[ "firstName"];
     $last_name=$_POST[ "lastName"];
