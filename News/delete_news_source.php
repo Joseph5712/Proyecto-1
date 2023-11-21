@@ -1,4 +1,5 @@
 <?php
+
 // Verifica si se proporciona un ID válido en la URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $news_source_id = $_GET['id'];
