@@ -10,6 +10,7 @@ require('./controlador/session_start.php');
 	<title>My Cover</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/noticias.css">
 </head>
 <body>
 <?php if ($_SESSION['role_id'] === '1') { ?>
@@ -56,13 +57,16 @@ require('./controlador/session_start.php');
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="./News/form_news_source.php">News Source</a>
-						<a class="dropdown-item" href="./News/show_news_source.php">Show News Source</a>
 					</div>
 				</li>
 				<a class="nav-item nav-link text-justify ml-3 hover-primary" href="controlador/logout.php">Salir</a>
 			</div>
 		</div>
 	</nav>
+	<?php 
+	include('./News/newsCover.php');
+	?>
+		
     <?php } else { ?>
     <!-- cierra sesion para los inactivos -->
     <?php include('./controlador/logout.php');?>

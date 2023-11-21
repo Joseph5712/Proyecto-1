@@ -1,4 +1,5 @@
 <?php
+include('../controlador/session_start.php');
 $conn = new mysqli('localhost:3306', 'root', '', 'php_proyecto1');
 if($_POST){
     $categoryName=$_POST[ "categoryName"];

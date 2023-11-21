@@ -1,5 +1,5 @@
 <?php
-include('./modelo/conexion.php');
+include('../modelo/conexion.php');
 if($_POST){
     $first_name=$_POST[ "firstName"];
     $last_name=$_POST[ "lastName"];

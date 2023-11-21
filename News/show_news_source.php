@@ -1,9 +1,15 @@
 <?php
+include('../controlador/session_start.php');
 include('../modelo/conexion.php');
 
+if (isset($_SESSION['id'])) {
+    // Establece el ID del usuario en una variable de sesión
+    $user_id = $_SESSION['id'];
+}
 // Modificamos la consulta para obtener el nombre de la categoría
 $sql = "SELECT ns.id, ns.nombre_fuente, c.name AS categoria_nombre FROM news_source ns
-        LEFT JOIN categories c ON ns.category_id = c.id";
+        LEFT JOIN categories c ON ns.category_id = c.id
+        WHERE ns.user_id = $user_id";
 $result = $conn->query($sql);
 
 // Verifica si hay resultados y muestra las fuentes de noticias en la tabla

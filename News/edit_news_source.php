@@ -1,6 +1,6 @@
 <?php
 include('../modelo/conexion.php');
-
+include('../controlador/session_start.php');
 // Verifica si el formulario ha sido enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verifica si se proporciona un ID válido en la URL

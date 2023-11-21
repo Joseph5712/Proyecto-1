@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.news-item {
+    box-sizing: border-box;
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    max-height: 150px; /* Ajusta la altura máxima según tus necesidades */
+}
+
+p {
+    margin: 0;
+}
